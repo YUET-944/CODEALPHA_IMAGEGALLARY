@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphic Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Added theme toggle button -->
+    <button class="theme-toggle" id="themeToggle">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <div class="container">
+        <header class="gallery-header">
+            <h1>Creative Gallery</h1>
+            <p>Discover amazing photography and artwork</p>
+        </header>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="portrait">Portrait</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+        </div>
+
+        <!-- Image Gallery Grid -->
+        <div class="gallery-grid" id="gallery">
+            <!-- Nature Images -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5HjDQ3IGBfe00IbFRCQur6znXjm2SM.png" alt="Mountain Lake Reflection" loading="lazy">
+                <div class="overlay">
+                    <h3>Mountain Lake</h3>
+                    <p>Pristine alpine reflection with golden autumn colors</p>
+                    <span class="photographer">by Alex Chen</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="nature">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-5feXypC6B0UqeaZzSHk28C2tYWe31F.png" alt="Forest Light Rays" loading="lazy">
+                <div class="overlay">
+                    <h3>Forest Light</h3>
+                    <p>Mystical sunbeams through towering trees</p>
+                    <span class="photographer">by Sarah Kim</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VopLVch8egaHdwcCdJdhx1VF4VFPyo.png" alt="Ocean Waves Aerial" loading="lazy">
+                <div class="overlay">
+                    <h3>Ocean Waves</h3>
+                    <p>Turquoise waters meeting pristine shore</p>
+                    <span class="photographer">by Mike Torres</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-zYSe9ZAyq5bkE1nsLzOu7GGKOkBaWh.png" alt="Stone Bridge Reflection" loading="lazy">
+                <div class="overlay">
+                    <h3>Stone Bridge</h3>
+                    <p>Ancient arch reflected in misty waters</p>
+                    <span class="photographer">by Emma Wilson</span>
+                </div>
+            </div>
+
+            <!-- Added Cherry Blossoms to nature category -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-hLjl9vuMIkhnIX4SBVmQjo6u80sMQv.jpeg" alt="Cherry Blossoms Bridge" loading="lazy">
+                <div class="overlay">
+                    <h3>Cherry Blossoms</h3>
+                    <p>Pink sakura framing traditional red bridge</p>
+                    <span class="photographer">by Yuki Tanaka</span>
+                </div>
+            </div>
+
+            <!-- Added Light Trails to nature category -->
+            <div class="gallery-item" data-category="nature">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qCcOSKgk2VuG23Jmo9fXruNU7dAmTk.png" alt="Star Light Trails" loading="lazy">
+                <div class="overlay">
+                    <h3>Light Trails</h3>
+                    <p>Celestial star trails creating cosmic circles</p>
+                    <span class="photographer">by Tom Johnson</span>
+                </div>
+            </div>
+
+            <!-- Architecture Images -->
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NnpWDRyGt98H7C0FrXpuli0eCyes3u.png" alt="Glass Tower Perspective" loading="lazy">
+                <div class="overlay">
+                    <h3>Glass Tower</h3>
+                    <p>Modern skyscrapers reaching skyward</p>
+                    <span class="photographer">by David Park</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-XedcZMkaw6lzB5zTV7VkM7mu3ygJi6.png" alt="Spiral Staircase" loading="lazy">
+                <div class="overlay">
+                    <h3>Spiral Stairs</h3>
+                    <p>Elegant geometric descent into infinity</p>
+                    <span class="photographer">by Lisa Zhang</span>
+                </div>
+            </div>
+
+            <!-- Portrait Images -->
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Pm5485XwUZR5H6OLOpFfwLZcnKNDqz.png" alt="Digital Portrait Study" loading="lazy">
+                <div class="overlay">
+                    <h3>Portrait Study</h3>
+                    <p>Digital art technique demonstration</p>
+                    <span class="photographer">by James Lee</span>
+                </div>
+            </div>
+
+            <!-- Added classical portrait to portrait category -->
+            <div class="gallery-item" data-category="portrait">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uXtoHhLLXrKZitQnSm7aq9HU11q83b.png" alt="Classical Portrait" loading="lazy">
+                <div class="overlay">
+                    <h3>Desert Riders</h3>
+                    <p>Classical painting of robed figures on horseback</p>
+                    <span class="photographer">by Historical Masters</span>
+                </div>
+            </div>
+
+            <!-- Abstract Images -->
+            <!-- Added Wisdom book to abstract category -->
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-jXzkbLtmZ6tZGKMKQs2JIKk440LJAp.png" alt="Ancient Wisdom Book" loading="lazy">
+                <div class="overlay">
+                    <h3>Wisdom</h3>
+                    <p>Ancient tome surrounded by golden autumn leaves</p>
+                    <span class="photographer">by Ryan Kim</span>
+                </div>
+            </div>
+
+            <!-- Updated Color Flow with actual image -->
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-16XC8xmMiUQcBVQlI1ppWih71GCEEA.png" alt="Color Flow Abstract" loading="lazy">
+                <div class="overlay">
+                    <h3>Color Flow</h3>
+                    <p>Vibrant flowing colors in dynamic motion</p>
+                    <span class="photographer">by Maya Patel</span>
+                </div>
+            </div>
+
+            <!-- Updated Liquid Motion with actual image -->
+            <div class="gallery-item" data-category="abstract">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bOxiAxEGi2ZD4ZjzqNLleCvFWaD1uE.png" alt="Liquid Motion Abstract" loading="lazy">
+                <div class="overlay">
+                    <h3>Liquid Motion</h3>
+                    <p>Fluid dynamics with warm amber tones</p>
+                    <span class="photographer">by Alex Rivera</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <button class="nav-btn prev-btn" id="prevBtn">&#8249;</button>
+            <button class="nav-btn next-btn" id="nextBtn">&#8250;</button>
+            <img class="lightbox-image" id="lightboxImage" src="/placeholder.svg" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+                <!-- Added photographer info in lightbox -->
+                <span class="lightbox-photographer" id="lightboxPhotographer"></span>
+                <div class="image-counter">
+                    <!-- Updated counter to reflect 13 total images -->
+                    <span id="currentImage">1</span> / <span id="totalImages">13</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
