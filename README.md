@@ -15,6 +15,11 @@ A modern, responsive, and interactive image gallery web application built with *
 *   **Modern UI/UX:** Features a clean, minimalist design with smooth animations and transitions for an enhanced user experience.
 *   **Active Navigation:** Visual feedback in the navigation bar shows the currently selected category.
 
+
+##🌐 Live Demo
+https://v0-image-gallery-design-puce.vercel.app/
+
+
 ## 🛠️ Built With
 
 *   **React** - Frontend library for building user interfaces.
